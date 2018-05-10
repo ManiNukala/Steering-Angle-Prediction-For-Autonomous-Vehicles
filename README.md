@@ -11,3 +11,6 @@ VGG 16 was used for feature extraction purposes. The model was frozen from train
 The Sequence of the features of the images created in the previous step were fed as the inputs to the LSTM. The label for each sequence is the steering angle of the first image in the sequence. The LSTM was a 4 layered network and batch normalization was used after the input layer to normalize existing variations in the input which existed due to variance in driving conditions found in the video frames. The LSTM network was trained in 40 epochs using Adam Optimizer. 
 ## Results
 We achieve an mse of  0.00123 on our training data and 0.029 radians on the testing data. On visualizing our results we see that our model predicts exceptionally well.
+## Acknowledgements
+Dataset:https://github.com/udacity/self-driving-car/tree/master/datasets/CH2
+ROSBAG data extraction : https://github.com/rwightman/udacity-driving-reader
